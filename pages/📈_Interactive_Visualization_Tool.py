@@ -6,8 +6,11 @@ def main():
     st.set_page_config(page_title="📈 Interactive Visualization Tool", layout="wide")
     st.header("📈 Interactive Visualization Tool")
 
+    # render pygwalker interactive tool if session state has df
     if st.session_state.get("df") is not None:
         StreamlitRenderer(st.session_state.df).explorer()
+
+    # require user to upload dataset
     else:
         st.info("Please upload your dataset first.")
         uploaded_file = st.file_uploader("Upload your dataset here.", type= "csv")
