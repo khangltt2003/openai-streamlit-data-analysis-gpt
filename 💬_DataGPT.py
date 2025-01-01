@@ -1,6 +1,5 @@
 import pandas as pd
 import streamlit as st
-from altair.vegalite.v5.theme import theme
 from dotenv import load_dotenv
 import matplotlib.pyplot as plt
 from langchain_openai import ChatOpenAI
