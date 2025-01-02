@@ -6,7 +6,6 @@ import numpy as np
 import streamlit as st
 from src.utils import convert_image_to_color_ascii, convert_image_to_ascii
 
-
 def main():
     st.set_page_config(page_title="📸 Convert Image To Ascii", layout="centered")
     st.title("📸 Convert Image To Ascii")
