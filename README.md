@@ -1,61 +1,42 @@
-# data-analysis-llm
+# DataGPT and ASCII Generator
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+Welcome to the **DataGPT and ASCII Generator** repository! This project combines the power of AI, data analytics, and creative visualization to provide users with an interactive platform for data exploration and artistic expression.
 
-a llm that allow user to upload dataset, ask question, generate figures, and interact with dataset visualization
+---
 
-## Project Organization
+## Features
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         data_analysis_llm and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── data_analysis_llm   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes data_analysis_llm a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+### Data Analysis and Visualization
+- **Conversational Data Insights**: 
+  - Built using **OpenAI’s GPT-4o-mini model** and LangChain's `PandasDataFrameAgent`, allowing users to interact with datasets via natural language queries.
+  - Users can upload datasets and receive detailed analytics, generate Python code, and create plots effortlessly.
+- **PygWalker Integration**: 
+  - Provides an intuitive drag-and-drop interface for interactive data visualizations without requiring users to write any code.
 
---------
+### ASCII Art Generator
+- **Image to ASCII Conversion**:
+  - Leveraged **OpenCV** and **Pillow** to transform user-uploaded images and GIFs into ASCII art.
+  - Supports both black-and-white and color ASCII art formats.
 
+### Streamlit Web App
+- Built using **Streamlit** to provide a fast and user-friendly web interface:
+  - Upload datasets for analysis.
+  - Convert images and GIFs into ASCII art with ease.
+  - Explore datasets and generate plots via drag-and-drop or conversational commands.
+
+---
+
+## Technologies Used
+
+- **Frontend**: Streamlit
+- **AI Models**: OpenAI’s GPT-4o-mini, LangChain
+- **Data Visualization**: PygWalker
+- **Image Processing**: OpenCV, Pillow
+
+---
+
+## Achievements
+
+- Delivered a seamless conversational interface for data exploration, empowering users to generate analytics, plots, and Python code without manual effort.
+- Enhanced user interaction with datasets through **PygWalker**, enabling intuitive drag-and-drop plotting.
+- Added a creative edge with an ASCII art generator, converting images and GIFs into stunning artistic renditions.
